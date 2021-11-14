@@ -229,10 +229,18 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libdng_sdk.vendor \
     libgui_vendor \
-    CameraGo \
-    libxml2 \
-    privapp-permissions-camera-go.xml \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    libstdc++.vendor \
+
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapminfree=4m \
+    dalvik.vm.heapstartsize=16m
+
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 
 PRODUCT_PACKAGES += \
     libshim_megvii
