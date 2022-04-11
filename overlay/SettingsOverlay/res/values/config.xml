@@ -18,4 +18,9 @@
          3 = right side
     -->
     <integer name="config_fingerprintSensorLocation">3</integer>
+
+ <!-- Maintainer info -->
+    <string name="config_maintainer_name">Basharat</string>
+    <string name="config_maintainer_link">https://t.me/Ba_Sh_ArAT</string>
 </resources>
+
